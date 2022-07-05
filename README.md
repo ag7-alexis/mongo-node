@@ -11,6 +11,7 @@ plasticité = document => schema dynamique
 ## Cours 2 :
 
 couche controlleur/service
+Création d'une api pour gérer des chiens, on utilise express
 
 ### Erreurs
 

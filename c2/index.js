@@ -1,18 +1,17 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const router = require("./routes");
 
-const host = "localhost";
-const port = 3000;
-mongoose.connect("mongodb+srv://mongo_admin:test123@cluster0.4hmoj.mongodb.net/test");
+mongoose.connect(process.env.MONGODB_URI);
 
 const database = mongoose.connection;
 
 database.on("error", (e) => console.log("Error", e));
 database.on("open", () => {
     console.log("Open");
-    app.listen(port, host, () => {
-        console.log(`Server is running on http://${host}:${port}`);
+    app.listen(process.env.PORT, process.env.HOST, () => {
+        console.log(`Server is running on http://${process.env.HOST}:${process.env.PORT}`);
     });
 });
 
