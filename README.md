@@ -31,3 +31,13 @@ Essayer d'accéder au body quand on fait un post, le probleme est qu'il faut le 
 
 todo swager
 todo expliquer import module au lieu de require
+
+## Cours 3 :
+
+### Layout routes/services/controllers
+
+Permet de réutiliser le code et l'ajout de layout permet d'absorder la complexité
+
+## Cours 4 :
+
+Authentification via JWT
